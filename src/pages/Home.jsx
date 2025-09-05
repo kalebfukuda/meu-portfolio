@@ -1,12 +1,14 @@
 import React from 'react';
 import Banner from '../components/Banner';
+import PersonalSection from '../components/PersonalSection';
+import ProjectsSection from '../components/ProjectsSection';
 
 function Home() {
   return (
-    <div>
+     <div className="flex flex-col min-h-screen">
       <Banner />
-      <h1>Welcome to my portfolio</h1>
-      <p>This is my home page.</p>
+      <PersonalSection />
+      <ProjectsSection />
     </div>
   );
 }
