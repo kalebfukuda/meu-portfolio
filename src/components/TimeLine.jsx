@@ -1,10 +1,12 @@
-import React, { useRef, useLayoutEffect } from "react";
+import React, { useRef, useLayoutEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import PersonalData from "../data/personal/PersonalData";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const TimeLine = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const timeLineRef = useRef(null);
   useLayoutEffect(() => {
     if (!timeLineRef.current) return;
@@ -53,9 +55,10 @@ const TimeLine = () => {
 
   return (
     <div ref={timeLineRef}>
-      <h1 className="text-8xl font-bold text-accent p-10 text-center sectionHeader">
+      <h1 className="text-8xl font-bold text-accent mb-15 text-center sectionHeader">
         A LITTLE OF MY HISTORY...
       </h1>
+      <div className="bg-"></div>
       <div>
         <ol class="items-center sm:flex ">
           <li class="relative mb-6 sm:mb-0">
@@ -75,6 +78,7 @@ const TimeLine = () => {
               </p>
               <a
                 className="text-greener"
+                target="_ref"
                 href="https://www.geologistica.com.br/"
               >
                 Geologistica
@@ -96,7 +100,7 @@ const TimeLine = () => {
               <p class="text-base font-normal text-gray-500 dark:text-gray-400">
                 <i class="fa-solid fa-laptop"></i> Full-stack Developer
               </p>
-              <a href="https://evertecinc.com/pt-br/">
+              <a target="_ref" href="https://evertecinc.com/pt-br/">
                 Sinqia (Evertec Brasil)
               </a>
             </div>
@@ -136,7 +140,10 @@ const TimeLine = () => {
               <p class="text-base font-normal text-gray-500 dark:text-gray-400">
                 <i class="fa-solid fa-graduation-cap"></i> AI Web Development
               </p>
-              <a href="https://www.lewagon.com/tokyo?gad_source=1&gad_campaignid=9578090157&gbraid=0AAAAADDMI2hSBxbJxMnbNEYoWz1kyHtkJ&gclid=Cj0KCQjwoP_FBhDFARIsANPG24N2DI4l8_RFWR75x4lWr02ROQNo8VPD6P9dThPg2FOtHc05mtf3_38aAsJqEALw_wcB">
+              <a
+                target="_ref"
+                href="https://www.lewagon.com/tokyo?gad_source=1&gad_campaignid=9578090157&gbraid=0AAAAADDMI2hSBxbJxMnbNEYoWz1kyHtkJ&gclid=Cj0KCQjwoP_FBhDFARIsANPG24N2DI4l8_RFWR75x4lWr02ROQNo8VPD6P9dThPg2FOtHc05mtf3_38aAsJqEALw_wcB"
+              >
                 Le Wagon Tokyo
               </a>
             </div>
