@@ -1,26 +1,26 @@
+import { StacksImages } from "./StacksImages";
+
 export const PersonalData = [
   {
     company: "Geologistica",
     content: {
       role: "Full-stack Developer",
-      stacks: [
-        {
-          data: ["SQL Server"],
-          backend: [".NET C#"],
-          frontEnd: [
-            "HTML",
-            "Javascript",
-            "CSS",
-            "Bootstrap",
-            "DevExpress",
-            "Leaflet",
-          ],
-          others: ["OpenGL", "sourceTree"],
-        },
-      ],
+      stacks: {
+        data: [StacksImages["sql-server"]],
+        backend: [StacksImages["c-sharp"]],
+        frontEnd: [
+          StacksImages["html-5"],
+          StacksImages["js"],
+          StacksImages["css-3"],
+          StacksImages["bootstrap"],
+          StacksImages["devexpress"],
+          StacksImages["leaflet"],
+        ],
+        others: [StacksImages["OpenGL"], StacksImages["Sourcetree"]],
+      },
       projects: ["Giulia", "Tropics", "AutoBus", "PesquisaOD"],
       link: "https://www.geologistica.com.br/",
-      sector: "Logistics and Geoinformation ",
+      sector: "Logistics and Geoinformation",
       description: `Geologística is a Brazilian company with over 30 years of experience in transportation, logistics, and geoinformation.
         Geologística offers a range of solutions that combine simulation algorithms, geospatial data, and optimization techniques to enhance logistics 
         and transportation planning.        
@@ -36,22 +36,26 @@ export const PersonalData = [
     company: "Sinqia (Evertec Brasil)",
     content: {
       role: "Full-stack Developer",
-      stacks: [
-        {
-          data: ["SQL Server", "Oracle"],
-          backend: [".NET C#"],
-          frontEnd: ["HTML", "Javascript", "CSS", "Bootstrap", "Angular"],
-          others: [
-            "GitHub",
-            "Jira",
-            "Confluence",
-            "Kanban",
-            "Scrum",
-            "API RESTful",
-            "RabbitMQ",
-          ],
-        },
-      ],
+      stacks: {
+        data: [StacksImages["sql-server"], StacksImages["oracle"]],
+        backend: [StacksImages["c-sharp"]],
+        frontEnd: [
+          StacksImages["html-5"],
+          StacksImages["js"],
+          StacksImages["css-3"],
+          StacksImages["bootstrap"],
+          StacksImages["AngularJS"],
+        ],
+        others: [
+          StacksImages["github"],
+          StacksImages["jira"],
+          StacksImages["confluence"],
+          StacksImages["kanban"],
+          StacksImages["scrum"],
+          StacksImages["api"],
+          StacksImages["RabbitMQ"],
+        ],
+      },
       projects: ["Pension and Investments"],
       sector: "Finance",
       link: "https://www.geologistica.com.br/",
@@ -73,11 +77,16 @@ export const PersonalData = [
     company: "Self employee",
     content: {
       role: "Electrician",
-      stacks: [
-        {
-          others: ["Teamwork", "Communication", "Self-learning"],
-        },
-      ],
+      stacks: {
+        data: [],
+        backend: [],
+        frontEnd: [],
+        others: [
+          StacksImages["teamwork"],
+          StacksImages["communication"],
+          StacksImages["learning"],
+        ],
+      },
       projects: ["Warehouses", "Hospitals", "Offices"],
       sector: "Construction",
       link: "",
@@ -94,14 +103,23 @@ export const PersonalData = [
     company: "Le Wagon Tokyo",
     content: {
       role: "Student",
-      stacks: [
-        {
-          data: ["SQL"],
-          backend: ["Ruby", "Ruby on Rails"],
-          frontEnd: ["HTML", "Javascript", "CSS", "Bootstrap", "Angular"],
-          others: ["GitHub", "Figma", "Heroku", "OpenAI", "WebSocket"],
-        },
-      ],
+      stacks: {
+        data: [StacksImages["sql"]],
+        backend: [StacksImages["ruby"], StacksImages["rubyonrails"]],
+        frontEnd: [
+          StacksImages["html-5"],
+          StacksImages["js"],
+          StacksImages["css-3"],
+          StacksImages["bootstrap"],
+          StacksImages["Vue"],
+        ],
+        others: [
+          StacksImages["github"],
+          StacksImages["Figma"],
+          StacksImages["Heroku"],
+          StacksImages["OpenAI"],
+        ],
+      },
       projects: ["WatchList", "mailAI", "Foodly"],
       sector: "Study",
       link: "https://www.lewagon.com/",

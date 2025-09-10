@@ -1,6 +1,8 @@
 import React, { useLayoutEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { PersonalData } from "../../data/personal/PersonalData";
+import StackPill from "./StackPill";
+import { div, p } from "framer-motion/client";
 
 const PersonalCard = (name) => {
   const buttonRef = useRef(null);
@@ -9,15 +11,41 @@ const PersonalCard = (name) => {
   return (
     <div className="bg-primary rounded-xl w-96">
       <div className="p-3">
-        <h2 className="text-xl font-bold text-center mb-2">{data.company}</h2>
-        <h2 className="text-xm text-center mb-2">{data.content.sector}</h2>
+        <h2 className="text-xl font-bold text-center mb-2">
+          {data.company} | {data.content.sector}
+        </h2>
         <div className="bg-lightBlue p-4 rounded-xl">
-          <span className="whitespace-pre-line italic text-black">
+          <span className="whitespace-pre-line italic text-white">
             "{data.content.comment}"
           </span>
           <br />
           <br />
-          <p className="text-black text-right font-bold">Fukuda Kaleb Dan</p>
+          <p className="text-white text-right font-bold mb-2">
+            Fukuda Kaleb Dan
+          </p>
+
+          <div className="flex justify-center">
+            {data.content.stacks.data.map((stack, i) => (
+              <div className="mx-1 h-5 w-5">
+                <img className="" src={stack}></img>
+              </div>
+            ))}
+            {data.content.stacks.backend.map((stack, i) => (
+              <div className="mx-1 h-5 w-5">
+                <img className="" src={stack}></img>
+              </div>
+            ))}
+            {data.content.stacks.frontEnd.map((stack, i) => (
+              <div className="mx-1  h-5 w-5">
+                <img className="" src={stack}></img>
+              </div>
+            ))}
+            {data.content.stacks.others.map((stack, i) => (
+              <div className="mx-1 h-5 w-5">
+                <img className="" src={stack}></img>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
