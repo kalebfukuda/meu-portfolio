@@ -1,0 +1,12 @@
+.timelineBulletPoint {
+  cursor: pointer;
+}
+
+.timelineBulletPoint:hover {
+  transform: scale(1.2);
+}
+
+.clicked-style {
+  background-color: lightcoral;
+  transform: scale(1.2);
+}

@@ -7,7 +7,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 const TimeLine = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [companyName, setCompanyName] = useState("");
+  const [companyName, setCompanyName] = useState("Geologistica");
+  const boxRef = useRef(null);
 
   const timeLineRef = useRef(null);
   useLayoutEffect(() => {
@@ -17,6 +18,8 @@ const TimeLine = () => {
     const ctx = gsap.context(() => {
       const timeLineBullets = q(".timeLineBullet");
       const contentTimeLine = q(".contentTimeline");
+      const infoContent = q(".contentInfo");
+
       const sectionHeader = q(".sectionHeader");
 
       const tl = gsap.timeline({
@@ -25,9 +28,16 @@ const TimeLine = () => {
           start: "top center",
           toggleActions: "play none none reverse",
           markers: true,
+          onLeaveBack: () => {
+            setIsOpen(false);
+          },
         },
       });
-
+      tl.from(boxRef.current, {
+        opacity: 0,
+        y: 30,
+        duration: 0,
+      });
       tl.from(sectionHeader, {
         opacity: 0,
         y: 30,
@@ -46,7 +56,7 @@ const TimeLine = () => {
         opacity: 0,
         y: 30,
         duration: 0.6,
-        stagger: 0.5,
+        stagger: 0.2,
       });
     }, timeLineRef);
 
@@ -59,6 +69,7 @@ const TimeLine = () => {
     console.log(company);
     setCompanyName(company);
     setIsOpen(true);
+    gsap.fromTo(boxRef.current, { opacity: 0 }, { opacity: 1, duration: 1.2 });
   };
 
   return (
@@ -66,11 +77,14 @@ const TimeLine = () => {
       <h1 className="text-8xl font-bold text-accent mb-15 text-center sectionHeader">
         A LITTLE OF MY HISTORY...
       </h1>
-      {isOpen && (
-        <div className="flex justify-center mb-6">
-          <PersonalCard name={companyName} />
-        </div>
-      )}
+
+      <div
+        ref={boxRef}
+        style={{ display: isOpen ? "flex" : "none" }}
+        className="flex justify-center mb-6"
+      >
+        <PersonalCard name={companyName} />
+      </div>
 
       <div>
         <ol class="items-center sm:flex ">
@@ -79,7 +93,7 @@ const TimeLine = () => {
               class="flex items-center timeLineBullet"
               onClick={() => bulletClick("Geologistica")}
             >
-              <div class="z-10 flex items-center justify-center w-3 h-3 bg-accent rounded-full shrink-0"></div>
+              <div class="z-10 flex items-center justify-center w-3 h-3 bg-accent rounded-full shrink-0 timelineBulletPoint"></div>
               <div class="hidden sm:flex w-full bg-lightBlue h-0.5 dark:bg-gray-700"></div>
             </div>
             <div class="mt-3 sm:pe-12 min-w-xs contentTimeline">
@@ -106,7 +120,7 @@ const TimeLine = () => {
               class="flex items-center timeLineBullet"
               onClick={() => bulletClick("Sinqia (Evertec Brasil)")}
             >
-              <div class="z-10 flex items-center justify-center w-3 h-3 bg-accent rounded-full shrink-0"></div>
+              <div class="z-10 flex items-center justify-center w-3 h-3 bg-accent rounded-full shrink-0 timelineBulletPoint"></div>
               <div class="hidden sm:flex w-full bg-lightBlue h-0.5 dark:bg-gray-700"></div>
             </div>
             <div class="mt-3 sm:pe-12 min-w-xs contentTimeline">
@@ -129,7 +143,7 @@ const TimeLine = () => {
               class="flex items-center timeLineBullet"
               onClick={() => bulletClick("Self employee")}
             >
-              <div class="z-10 flex items-center justify-center w-3 h-3 bg-accent rounded-full shrink-0"></div>
+              <div class="z-10 flex items-center justify-center w-3 h-3 bg-accent rounded-full shrink-0 timelineBulletPoint"></div>
               <div class="hidden sm:flex w-full bg-lightBlue h-0.5 dark:bg-gray-700"></div>
             </div>
             <div class="mt-3 sm:pe-12 min-w-xs contentTimeline">
@@ -152,7 +166,7 @@ const TimeLine = () => {
               class="flex items-center timeLineBullet"
               onClick={() => bulletClick("Le Wagon Tokyo")}
             >
-              <div class="z-10 flex items-center justify-center w-3 h-3 bg-accent rounded-full shrink-0"></div>
+              <div class="z-10 flex items-center justify-center w-3 h-3 bg-accent rounded-full shrink-0 timelineBulletPoint"></div>
               <div class="hidden sm:flex w-full bg-lightBlue h-0.5 dark:bg-gray-700"></div>
             </div>
             <div class="mt-3 sm:pe-12 min-w-xs contentTimeline">
@@ -178,7 +192,7 @@ const TimeLine = () => {
               class="flex items-center timeLineBullet"
               onClick={() => bulletClick("Loading...")}
             >
-              <div class="z-10 flex items-center justify-center w-3 h-3 bg-accent rounded-full shrink-0"></div>
+              <div class="z-10 flex items-center justify-center w-3 h-3 bg-accent rounded-full shrink-0 timelineBulletPoint"></div>
               <div class="hidden sm:flex w-full bg-lightBlue h-0.5 dark:bg-gray-700"></div>
             </div>
             <div class="mt-3 contentTimeline">
