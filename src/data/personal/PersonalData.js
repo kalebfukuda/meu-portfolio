@@ -27,10 +27,8 @@ export const PersonalData = [
         Their services cater to both public and private sectors, aiming to improve performance and productivity.
     `,
       comment: `At Geologistica, I started my professional career, beginning as an intern and later being hired as a full-stack developer. 
-      I worked in a small team of 5–10 people, handling almost everything: UI/UX, front-end, back-end, databases, 
-      and even direct interaction with customers. It was an excellent experience to learn and improve my skills as a 
-      developer. A special highlight was the pesquisaOD project, a project for the São Paulo municipality, 
-      where I was involved from the very beginning.`,
+      I worked in a small team of 5–10 people, handling almost everything: UI/UX, front-end, back-end, databases, and even direct interaction with customers. 
+      It was an excellent experience to learn and improve my skills as a developer.`,
     },
     video: "",
   },
@@ -64,11 +62,10 @@ export const PersonalData = [
         Sinqia has been recognized as one of the top 100 global fintech companies by IDC, 
         highlighting its market presence and potential for growth in the financial services sector.
     `,
-      comment: `My second experience as a software developer was at a larger company, with 5K–10K employees. 
-      I worked as part of the customization squad in the pension and investments area, handling client-specific 
-      customizations, fixing bugs, improving system stability and performance, 
-      and testing and deploying the system to client infrastructure. A special highlight was participating in several 
-      critical deployment missions, where I was responsible for ensuring smooth releases under tight deadlines. `,
+      comment: `My second experience as a software developer was at a larger company, with 5K–10K employees.
+      I worked as part of the customization squad in the pension and investments area, handling client-specific customizations, fixing bugs, improving system stability and performance, 
+      and testing and deploying the system to client infrastructure. 
+      A special highlight was participating in several critical deployment tasks, where I was responsible for ensuring smooth releases under tight deadlines. `,
     },
     video: "",
   },
@@ -94,7 +91,7 @@ export const PersonalData = [
     video: "",
   },
   {
-    company: "Le Wagon",
+    company: "Le Wagon Tokyo",
     content: {
       role: "Student",
       stacks: [
@@ -109,16 +106,14 @@ export const PersonalData = [
       sector: "Study",
       link: "https://www.lewagon.com/",
       description: `Le Wagon's AI Software Development Bootcamp is an advanced iteration of their 
-      renowned Web Development program, now enhanced with cutting-edge artificial intelligence tools and techniques. 
-      This intensive 9-week course is designed for individuals aiming to integrate AI 
-      capabilities into full-stack web applications, utilizing the same technologies that power modern 
-      AI startups and platforms like ChatGPT.`,
+        renowned Web Development program, now enhanced with cutting-edge artificial intelligence tools and techniques. 
+        This intensive 9-week course is designed for individuals aiming to integrate AI 
+        capabilities into full-stack web applications, utilizing the same technologies that power modern 
+        AI startups and platforms like ChatGPT.`,
+      comment: `After two years of hardwork as an autonomous electrician, decided to go back to my formation area.
+        Searched for some courses and found Le Wagon AI Softare Development Bootcamp, a renowned course, with great impact in Tokyo and, found the opportunity to learn in depth new technologies and update my knowledge.
+        Special attention to our final project "Foodly", An AI-powered cooking assistant that lets you snap a photo of ingredients and generate recipes.`,
+      video: "",
     },
-    comment: `After two years of hardwork as an autonomous electrician, decided to go back to my formation area.
-    Searched for some courses and found Le Wagon AI Softare Development Bootcamp, a renowned course, with great impact
-    in Tokyo and, found the opportunity to learn in depth new languages, update my knowledge and make some networking.
-    Special attention our final project "Foodly", An AI-powered cooking assistant that lets you snap a photo of your ingredients
-    and generate recipes.`,
-    video: "",
   },
 ];
