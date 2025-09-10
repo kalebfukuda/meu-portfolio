@@ -176,7 +176,7 @@ const TimeLine = () => {
           <li class="relative mb-6 sm:mb-0">
             <div
               class="flex items-center timeLineBullet"
-              onClick={() => bulletClick("Now")}
+              onClick={() => bulletClick("Loading...")}
             >
               <div class="z-10 flex items-center justify-center w-3 h-3 bg-accent rounded-full shrink-0"></div>
               <div class="hidden sm:flex w-full bg-lightBlue h-0.5 dark:bg-gray-700"></div>

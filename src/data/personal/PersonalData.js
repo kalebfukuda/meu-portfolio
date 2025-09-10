@@ -26,9 +26,9 @@ export const PersonalData = [
         and transportation planning.        
         Their services cater to both public and private sectors, aiming to improve performance and productivity.
     `,
-      comment: `At Geologistica, I started my professional career, beginning as an intern and later being hired as a full-stack developer. 
+      comment: `At Geologistica, I started my professional career, beginning as an intern and later being hired as a full-stack developer. 🎓
       I worked in a small team of 5–10 people, handling almost everything: UI/UX, front-end, back-end, databases, and even direct interaction with customers. 
-      It was an excellent experience to learn and improve my skills as a developer.`,
+      It was an excellent experience to learn and improve my skills as a developer.🚀`,
     },
     video: "",
   },
@@ -66,10 +66,10 @@ export const PersonalData = [
         Sinqia has been recognized as one of the top 100 global fintech companies by IDC, 
         highlighting its market presence and potential for growth in the financial services sector.
     `,
-      comment: `My second experience as a software developer was at a larger company, with 5K–10K employees.
+      comment: `My second experience as a software developer was at a fintech 🏦, with 5K–10K employees.
       I worked as part of the customization squad in the pension and investments area, handling client-specific customizations, fixing bugs, improving system stability and performance, 
       and testing and deploying the system to client infrastructure. 
-      A special highlight was participating in several critical deployment tasks, where I was responsible for ensuring smooth releases under tight deadlines. `,
+      A special highlight was participating in several critical 🚨 deployment tasks, where I was responsible for ensuring smooth releases under tight deadlines. `,
     },
     video: "",
   },
@@ -93,8 +93,8 @@ export const PersonalData = [
       description: `My first professional experience in Japan, collaborating with a multicultural team. 
     Gained foundational knowledge in electrical systems and construction through self-directed learning.
     `,
-      comment: `Seeking new challenges, I moved to Japan with my wife, looking for new opportunities and purpose. 
-      I started working as an electrician on construction sites, learning on the job and meeting new people. 
+      comment: `Seeking new challenges, I moved to Japan with my wife, looking for new opportunities and purpose. ✈️ 
+      I started working as an electrician on construction sites, learning on the job and meeting new people. ⚡💡🔌
       It was tough at times, but it was a great experience to gain financial stability and reflect on my next steps. `,
     },
     video: "",
@@ -128,10 +128,31 @@ export const PersonalData = [
         This intensive 9-week course is designed for individuals aiming to integrate AI 
         capabilities into full-stack web applications, utilizing the same technologies that power modern 
         AI startups and platforms like ChatGPT.`,
-      comment: `After two years of hardwork as an autonomous electrician, decided to go back to my formation area.
+      comment: `After two years of hardwork as an autonomous electrician, decided to go back to my formation area. 🥵
         Searched for some courses and found Le Wagon AI Softare Development Bootcamp, a renowned course, with great impact in Tokyo and, found the opportunity to learn in depth new technologies and update my knowledge.
-        Special attention to our final project "Foodly", An AI-powered cooking assistant that lets you snap a photo of ingredients and generate recipes.`,
+        Special attention to our final project "Foodly", An AI-powered cooking assistant that lets you snap a photo of ingredients and generate recipes.🥤🥗🍔🍗🍟🥓`,
       video: "",
     },
+  },
+  {
+    company: "Loading...",
+    content: {
+      role: "Waiting...",
+      stacks: {
+        data: [],
+        backend: [StacksImages["nodejs"]],
+        frontEnd: [StacksImages["motion"], StacksImages["gsap"]],
+        others: [StacksImages["aws"]],
+      },
+      projects: [],
+      sector: "Waiting...",
+      link: "",
+      description: `Loading...
+    `,
+      comment: `Bootcamp completed — now the real adventure begins!✨✨✨
+        I’m eager to join a dynamic, multicultural company where I can explore new horizons, master fresh stacks, and shape the future together.
+        In IT, there’s always something new to learn, a new challenge to conquer, and a better version of ourselves to build.🌱 `,
+    },
+    video: "",
   },
 ];
