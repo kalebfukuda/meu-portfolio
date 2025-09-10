@@ -141,7 +141,11 @@ export const PersonalData = [
       stacks: {
         data: [],
         backend: [StacksImages["nodejs"]],
-        frontEnd: [StacksImages["motion"], StacksImages["gsap"]],
+        frontEnd: [
+          StacksImages["motion"],
+          StacksImages["gsap"],
+          StacksImages["react"],
+        ],
         others: [StacksImages["aws"]],
       },
       projects: [],
