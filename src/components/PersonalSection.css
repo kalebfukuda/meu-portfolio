@@ -1,0 +1,10 @@
+.personal-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 4rem;
+  color: white;
+  background-color: black;
+}
