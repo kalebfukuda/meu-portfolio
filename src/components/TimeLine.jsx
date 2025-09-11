@@ -87,8 +87,8 @@ const TimeLine = () => {
       </div>
 
       <div>
-        <ol class="items-center flex flex-col md:flex-row">
-          <li classd="relative mb-6 sm:mb-0 w-10">
+        <ol className="items-center flex flex-col md:flex-row">
+          <li className="relative mb-6 sm:mb-0 w-10">
             <div className="flex lg:grid lg:w-30">
               <div
                 className="flex items-center timeLineBullet"
