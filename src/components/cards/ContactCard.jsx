@@ -3,10 +3,10 @@ import { gsap } from "gsap";
 
 const ContactCard = () => {
   return (
-    <div className="bg-primary rounded-xl w-64">
-      <div className="p-3">
-        <div className="grid grid-cols-2 p-2">
-          <div>
+    <div className="bg-primary rounded-xl w-s md:w-64">
+      <div className="p-2">
+        <div className="grid md:grid-cols-2 p-2 md:gap-2">
+          <div className="grid place-items-center">
             <img
               src="src\assets\profile\me.jpeg"
               alt=""
