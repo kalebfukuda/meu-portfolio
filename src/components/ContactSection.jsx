@@ -7,8 +7,8 @@ gsap.registerPlugin(ScrollTrigger);
 const ProjectsSection = () => {
   const sectionRef = useRef(null);
   return (
-    <section ref={sectionRef} className="personal-section section">
-      <h1 className="text-8xl font-bold text-accent">Contact</h1>
+    <section ref={sectionRef} className="personal-section section p-4">
+      <h1 className="font-bold text-accent p-2">Contact</h1>
       <ContactCard />
     </section>
   );
