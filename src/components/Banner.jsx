@@ -48,7 +48,9 @@ const Banner = () => {
             </motion.p>
           </div>
         </div>
-        <div className="flex justify-center items-center"></div>
+        <div className="flex justify-center items-center">
+          <h1>Something</h1>
+        </div>
       </motion.div>
     </motion.section>
   );

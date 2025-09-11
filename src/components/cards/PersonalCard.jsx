@@ -9,7 +9,7 @@ const PersonalCard = (name) => {
   const data = PersonalData.find((company) => company.company === name.name);
   console.log(data);
   return (
-    <div className="bg-primary rounded-xl w-96">
+    <div className="md:bg-primary rounded-xl w-sm md:w-96">
       <div className="p-3">
         <h2 className="text-xl font-bold text-center mb-2">
           {data.company} | {data.content.sector}
@@ -24,14 +24,14 @@ const PersonalCard = (name) => {
             Fukuda Kaleb Dan
           </p>
 
-          <div className="flex justify-center">
+          <div className="flex justify-center flex-wrap">
             {data.content.stacks.data.map((stack, i) => (
-              <div className="mx-1 h-5 w-5">
+              <div className="mx-1 h-5 w-5 p-1">
                 <img className="" src={stack}></img>
               </div>
             ))}
             {data.content.stacks.backend.map((stack, i) => (
-              <div className="mx-1 h-5 w-5">
+              <div className="mx-1 h-5 w-5 p-1">
                 <img className="" src={stack}></img>
               </div>
             ))}
@@ -41,7 +41,7 @@ const PersonalCard = (name) => {
               </div>
             ))}
             {data.content.stacks.others.map((stack, i) => (
-              <div className="mx-1 h-5 w-5">
+              <div className="mx-1 h-5 w-5 p-1">
                 <img className="" src={stack}></img>
               </div>
             ))}
