@@ -24,7 +24,7 @@ export const ProjectsData = [
   {
     title: "TouchTime",
     stacks: ["Node.js", "Javascript", "React", "SQL"],
-    order: "3",
+    order: "1",
     listImages: ProjectsImages.touchTime,
     description: `A smart app designed for Brazilian small companies to log your daily work hours and transform them into insightful dashboards.
       Easily track your productivity, understand your work patterns, and get clear reports on monthly earnings, 

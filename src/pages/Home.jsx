@@ -9,6 +9,8 @@ function Home() {
     <div className="flex flex-col min-h-screen">
       <Banner />
       <PersonalSection />
+      <ProjectsSection />
+      <ContactSection />
     </div>
   );
 }

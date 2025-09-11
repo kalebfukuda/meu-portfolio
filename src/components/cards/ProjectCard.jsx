@@ -28,23 +28,23 @@ const ProjectCard = ({
   }, []);
 
   return (
-    <div className="grid grid-cols-2 gap-2 bg-primary rounded-xl w-96">
+    <div className="grid md:grid-cols-2 md:gap-2 mb-2 bg-primary rounded-xl w-xs md:w-80 xs:place-items-center">
       <div
         ref={containerRef}
-        className={`flex gap-2 overflow-hidden h-48 items-center bg-black rounded-xl ${
-          order === "1" ? "order-none" : "order-1"
+        className={`flex md:gap-2 overflow-hidden h-48 items-center bg-black rounded-xl ${
+          order === "1" ? "md:order-none" : "md:order-1"
         }`}
       >
         {[...listImages, ...listImages].map((element, index) => {
           return (
             <div
               key={`${title}${index}`}
-              className="image flex-shrink-0 h-48 flex items-center justify-center"
+              className="image flex-shrink-0 sm:h-20 md:h-48 flex items-center justify-center"
             >
               <img
                 src={element}
                 alt="1"
-                className="w-full h-full object-contain"
+                className="w-sm md:w-full md:h-full object-contain"
               />
             </div>
           );
