@@ -86,10 +86,10 @@ const TimeLine = () => {
         <PersonalCard name={companyName} />
       </div>
 
-      <div className>
+      <div>
         <ol class="items-center flex flex-col md:flex-row">
-          <li classd="relative mb-6 sm:mb-0">
-            <div className="flex lg:grid">
+          <li classd="relative mb-6 sm:mb-0 w-10">
+            <div className="flex lg:grid lg:w-30">
               <div
                 className="flex items-center timeLineBullet"
                 onClick={() => bulletClick("Geologistica")}
@@ -97,7 +97,7 @@ const TimeLine = () => {
                 <div className="z-10 flex items-center justify-center w-3 h-3 bg-accent rounded-full shrink-0 timelineBulletPoint"></div>
                 <div className="hidden sm:flex w-full bg-lightBlue h-0.5"></div>
               </div>
-              <div className="mt-3 pe-1 md:pe-12 min-w-xs ps-2 md:ps-0 contentTimeline">
+              <div className="mt-3 pe-1 min-w-xs ps-2 md:ps-0 contentTimeline">
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                   February, 2018
                 </time>
@@ -118,7 +118,7 @@ const TimeLine = () => {
             </div>
           </li>
           <li className="relative mb-6 sm:mb-0">
-            <div className="flex md:grid">
+            <div className="flex lg:grid lg:w-30">
               <div
                 className="flex items-center timeLineBullet"
                 onClick={() => bulletClick("Sinqia (Evertec Brasil)")}
@@ -126,7 +126,7 @@ const TimeLine = () => {
                 <div className="z-10 flex items-center justify-center w-3 h-3 bg-accent rounded-full shrink-0 timelineBulletPoint"></div>
                 <div className="hidden sm:flex w-full bg-lightBlue h-0.5 dark:bg-gray-700"></div>
               </div>
-              <div className="mt-3 pe-1 md:pe-12 min-w-xs ps-2 md:ps-0 contentTimeline">
+              <div className="mt-3 pe-1 min-w-xs ps-2 md:ps-0 contentTimeline">
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                   July, 2021
                 </time>
@@ -143,7 +143,7 @@ const TimeLine = () => {
             </div>
           </li>
           <li className="relative mb-6 sm:mb-0">
-            <div className="flex md:grid">
+            <div className="flex lg:grid lg:w-30">
               <div
                 className="flex items-center timeLineBullet"
                 onClick={() => bulletClick("Self employee")}
@@ -151,7 +151,7 @@ const TimeLine = () => {
                 <div className="z-10 flex items-center justify-center w-3 h-3 bg-accent rounded-full shrink-0 timelineBulletPoint"></div>
                 <div className="hidden sm:flex w-full bg-lightBlue h-0.5 dark:bg-gray-700"></div>
               </div>
-              <div className="mt-3 pe-1 md:pe-12 min-w-xs ps-2 md:ps-0 contentTimeline">
+              <div className="mt-3 pe-1 min-w-xs ps-2 md:ps-0 contentTimeline">
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                   August, 2023
                 </time>
@@ -168,7 +168,7 @@ const TimeLine = () => {
             </div>
           </li>
           <li className="relative mb-6 sm:mb-0">
-            <div className="flex md:grid">
+            <div className="flex lg:grid lg:w-30">
               <div
                 className="flex items-center timeLineBullet"
                 onClick={() => bulletClick("Le Wagon Tokyo")}
@@ -176,7 +176,7 @@ const TimeLine = () => {
                 <div className="z-10 flex items-center justify-center w-3 h-3 bg-accent rounded-full shrink-0 timelineBulletPoint"></div>
                 <div className="hidden sm:flex w-full bg-lightBlue h-0.5 dark:bg-gray-700"></div>
               </div>
-              <div className="mt-3 pe-1 md:pe-12 min-w-xs ps-2 md:ps-0 contentTimeline">
+              <div className="mt-3 pe-1 min-w-xs ps-2 md:ps-0 contentTimeline">
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                   July, 2025
                 </time>
@@ -197,7 +197,7 @@ const TimeLine = () => {
             </div>
           </li>
           <li className="relative mb-6 sm:mb-0">
-            <div className="flex md:grid">
+            <div className="flex lg:grid lg:w-30">
               <div
                 className="flex items-center timeLineBullet"
                 onClick={() => bulletClick("Loading...")}
@@ -205,7 +205,7 @@ const TimeLine = () => {
                 <div className="z-10 flex items-center justify-center w-3 h-3 bg-accent rounded-full shrink-0 timelineBulletPoint"></div>
                 <div className="hidden sm:flex w-full bg-lightBlue h-0.5 dark:bg-gray-700"></div>
               </div>
-              <div className="mt-3 pe-1 md:pe-12 min-w-xs ps-2 md:ps-0 contentTimeline">
+              <div className="mt-3 pe-1 min-w-xs ps-2 md:ps-0 contentTimeline">
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                   September, 2025
                 </time>
