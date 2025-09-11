@@ -45,13 +45,12 @@ const ProjectsSection = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="project-section section">
+    <section ref={sectionRef} className="project-section section p-1 md:p-4">
       <h1 className="text-8xl font-bold text-accent">PROJECTS</h1>
-
-      <div className="grid grid-cols-2 gap-2">
+      <div className="grid md:grid-cols-2 md:gap-2">
         {ProjectsData.map((card, index) => {
           return (
-            <div className="p-4 projectCard">
+            <div className="md:p-4 projectCard">
               <ProjectCard
                 key={`${card.title}_${index}`}
                 title={card.title}
