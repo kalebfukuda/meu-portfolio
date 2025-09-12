@@ -18,7 +18,6 @@ export default function PageScroll() {
         duration: { min: 0.2, max: 0.5 },
         ease: "power1.inOut",
       },
-      markers: false,
     });
   }, []);
 }

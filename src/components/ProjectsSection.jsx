@@ -19,7 +19,6 @@ const ProjectsSection = () => {
           trigger: sectionRef.current,
           start: "top 50%",
           toggleActions: "play none none reverse",
-          markers: true,
         },
         opacity: 0,
         y: 0,
@@ -35,7 +34,6 @@ const ProjectsSection = () => {
           trigger: sectionRef.current,
           start: "top 30%",
           toggleActions: "play none none reverse",
-          markers: true,
         },
       });
     }, sectionRef);
