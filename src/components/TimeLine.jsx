@@ -27,7 +27,6 @@ const TimeLine = () => {
           trigger: timeLineRef.current,
           start: "top center",
           toggleActions: "play none none reverse",
-          markers: true,
           onLeaveBack: () => {
             setIsOpen(false);
           },
