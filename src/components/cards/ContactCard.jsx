@@ -8,7 +8,7 @@ const ContactCard = () => {
         <div className="grid md:grid-cols-2 p-2 md:gap-2">
           <div className="grid place-items-center">
             <img
-              src="src\assets\profile\me.jpeg"
+              src="https://avatars.githubusercontent.com/u/218706044?s=400&u=b159db357f43480e14de595eec781c908dc30fb2&v=4"
               alt=""
               className="rounded-full h-15 w-15 mb-2"
             />

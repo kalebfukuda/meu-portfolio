@@ -145,6 +145,7 @@ export const PersonalData = [
           StacksImages["motion"],
           StacksImages["gsap"],
           StacksImages["react"],
+          StacksImages["spline"],
         ],
         others: [StacksImages["aws"]],
       },

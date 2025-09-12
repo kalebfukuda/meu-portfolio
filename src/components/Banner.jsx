@@ -2,6 +2,7 @@ import React from "react";
 import bannerImg from "../assets/images/banner_port.jpg";
 import { motion } from "framer-motion";
 import BannerImage from "../components/spline/BannerImage";
+import Spline from "@splinetool/react-spline";
 
 const Banner = () => {
   const handleWheel = (e) => {
@@ -48,8 +49,11 @@ const Banner = () => {
             </motion.p>
           </div>
         </div>
-        <div className="flex justify-center items-center">
-          <h1>Something</h1>
+        <div className="flex justify-center items-center h-full">
+          <Spline
+            scene="https://prod.spline.design/0S9aDWQ2bMz0cdMK/scene.splinecode"
+            className="w-full h-full"
+          />
         </div>
       </motion.div>
     </motion.section>
