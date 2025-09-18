@@ -8,7 +8,7 @@ const ContactCard = () => {
         <div className="md:grid grid-cols-2">
           <div className="flex flex-col items-center">
             <img
-              src="src\assets\profile\me.jpeg"
+              src="public\me.jpeg"
               alt=""
               className="rounded-full h-15 w-15 mb-2"
             />
