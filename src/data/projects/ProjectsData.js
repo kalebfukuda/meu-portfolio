@@ -12,9 +12,26 @@ export const ProjectsData = [
     github: "https://github.com/Guayamose/Foodly",
   },
   {
+    title: "Famisafe",
+    stacks: [
+      "Ruby-on-Rails",
+      "PostgreSQL",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Leaflet",
+      "OpenLLM",
+    ],
+    order: "2",
+    listImages: ProjectsImages.famiSafe,
+    description: `An app designed to keep families connected and safe during emergencies. It allows family members to share their locations, communicate instantly, and use AI to identify the safest nearby shelters.`,
+    url: "",
+    github: "https://github.com/kalebfukuda/famisafe",
+  },
+  {
     title: "MailAI",
     stacks: ["Ruby-on-Rails", "Postgres", "OpenLLM"],
-    order: "2",
+    order: "1",
     listImages: ProjectsImages.mailAI,
     description: `An intelligent mail chatbot powered by OpenLLM that drafts and sends email 
       replies with the right tone and level of politeness tailored to each recipient.`,
@@ -24,12 +41,22 @@ export const ProjectsData = [
   {
     title: "TouchTime",
     stacks: ["Node.js", "Javascript", "React", "SQL"],
-    order: "1",
+    order: "2",
     listImages: ProjectsImages.touchTime,
     description: `A smart app designed for Brazilian small companies to log your daily work hours and transform them into insightful dashboards.
       Easily track your productivity, understand your work patterns, and get clear reports on monthly earnings, 
       time allocation, and personal work style.`,
     url: "",
     github: "https://github.com/kalebfukuda/TouchTime",
+  },
+  {
+    title: "Password-game",
+    stacks: ["ReactJS", "Vite", "Javascript", "TailwindCSS"],
+    order: "1",
+    listImages: ProjectsImages.passGame,
+    description: `A simple password game, designed to interact with users, by inserting a password/key and if corrected, showing
+      some instruction, animation, sound...`,
+    url: "https://fastidious-crostata-49582b.netlify.app/",
+    github: "https://github.com/kalebfukuda/password-game",
   },
 ];
