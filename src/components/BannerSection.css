@@ -1,0 +1,47 @@
+.banner-bg {
+  background: #d8d8d8;
+  background: linear-gradient(
+    0deg,
+    rgba(216, 216, 216, 1) 0%,
+    rgba(99, 165, 200, 1) 100%
+  );
+  width: 100%;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 80vw;
+  height: 80vw;
+  background-color: #f56960;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+.circle span {
+  font-size: 8.5vw;
+  line-height: 1.2;
+  color: white;
+  text-align: center;
+}
+
+#back_circle {
+  position: relative;
+  z-index: 1;
+}
+
+#mt {
+  position: relative;
+  z-index: 5;
+}
+
+#Cloud_0,
+#Cloud_1,
+#cloud_2,
+#cloud_3 {
+  position: relative;
+  z-index: 6;
+}
