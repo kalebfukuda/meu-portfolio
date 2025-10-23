@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const PersonalSection = () => {
   return (
-    <section className="personal-section section md:min-h-screen md:p-6">
+    <section className="personal-section section md:min-h-screen p-2 md:p-6">
       <TimeLine />
     </section>
   );
