@@ -6,7 +6,7 @@ import ContactSection from "../components/ContactSection";
 import BannerSection from "../components/BannerSection";
 function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col">
       <BannerSection />
       <PersonalSection />
       <ProjectsSection />
