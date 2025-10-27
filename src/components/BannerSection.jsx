@@ -12,7 +12,16 @@ const BannerSection = () => {
   useLayoutEffect(() => {
     //SET start state
     gsap.set(
-      ["#fuji", "#back_circle", "#cloud_0", "#cloud_1", "#cloud_2", "#cloud_3"],
+      [
+        "#fuji",
+        "#back_circle",
+        "#cloud_0",
+        "#cloud_1",
+        "#cloud_2",
+        "#cloud_3",
+        "#upcloud_1",
+        "#upcloud_2",
+      ],
       { opacity: 0, y: 0, transformOrigin: "center center" }
     );
     gsap.set("#fuji", { scale: 1.2 }); // Começa em 1.2
@@ -38,7 +47,13 @@ const BannerSection = () => {
       .to("#cloud_0", { opacity: 1, duration: 0.5, ease: "power1.out", y: 0 })
       .to("#cloud_1", { opacity: 1, duration: 0.5, ease: "power1.out", y: 0 })
       .to("#cloud_2", { opacity: 1, duration: 0.5, ease: "power1.out", y: 0 })
-      .to("#cloud_3", { opacity: 1, duration: 0.5, ease: "power1.out", y: 0 });
+      .to("#cloud_3", { opacity: 1, duration: 0.5, ease: "power1.out", y: 0 })
+      .to(["#upcloud_1", "#upcloud_2"], {
+        opacity: 1,
+        duration: 0.5,
+        ease: "power1.out",
+        y: 0,
+      });
 
     // Timeline de scroll
     const scrollTl = gsap.timeline({
@@ -118,6 +133,24 @@ const BannerSection = () => {
           ease: "power2.inOut",
         },
         "<" // Começa junto com o Fuji
+      )
+      .to(
+        "#upcloud_1",
+        {
+          x: -250,
+          duration: 6,
+          ease: "power2.inOut",
+        },
+        "<"
+      )
+      .to(
+        "#upcloud_2",
+        {
+          x: 250,
+          duration: 6,
+          ease: "power2.inOut",
+        },
+        "<1"
       )
       .to(
         ["#back_circle", "#text", "#KALEB"],
