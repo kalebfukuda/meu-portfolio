@@ -2,7 +2,34 @@ import { StacksImages } from "./StacksImages";
 
 export const PersonalData = [
   {
+    company: "Universidade Estadual Paulista",
+    period: "2012 - 2019",
+    content: {
+      role: "",
+      stacks: {
+        data: [StacksImages["MySQL"]],
+        backend: [
+          StacksImages["C"],
+          StacksImages["C++"],
+          StacksImages["Fortran"],
+          StacksImages["Pascal"],
+          StacksImages["Java"],
+        ],
+        frontEnd: [],
+        others: [StacksImages["OpenGL"], StacksImages["Sourcetree"]],
+      },
+      projects: ["Giulia"],
+      link: "https://www.geologistica.com.br/",
+      sector: "Bachelor of Computer Science",
+      description: `The 'Universidade Estadual Paulista (UNESP) - Rio Claro' campus is a public university in São Paulo, Brazil, known for its strong focus on science and technology. The Bachelor’s degree in Computer Science, offered through the Institute of Geosciences and Exact Sciences (IGCE), provides a solid foundation in programming, algorithms, systems, and software engineering. As a tuition-free public institution, UNESP offers quality education, making it a strong choice for students aiming to build a career in computer science.
+    `,
+      comment: `The 'Universidade Estadual Paulista (UNESP) - Rio Claro' campus is a public university in São Paulo, Brazil, known for its strong focus on science and technology. The Bachelor’s degree in Computer Science, offered through the Institute of Geosciences and Exact Sciences (IGCE), provides a solid foundation in programming, algorithms, systems, and software engineering. As a tuition-free public institution, UNESP offers quality education, making it a strong choice for students aiming to build a career in computer science.`,
+    },
+    video: "",
+  },
+  {
     company: "Geologistica",
+    period: "",
     content: {
       role: "Full-stack Developer",
       stacks: {
@@ -34,6 +61,7 @@ export const PersonalData = [
   },
   {
     company: "Sinqia (Evertec Brasil)",
+    period: "",
     content: {
       role: "Full-stack Developer",
       stacks: {
@@ -75,6 +103,7 @@ export const PersonalData = [
   },
   {
     company: "Self employee",
+    period: "",
     content: {
       role: "Electrician",
       stacks: {
@@ -101,6 +130,7 @@ export const PersonalData = [
   },
   {
     company: "Le Wagon Tokyo",
+    period: "",
     content: {
       role: "Student",
       stacks: {
@@ -136,6 +166,7 @@ export const PersonalData = [
   },
   {
     company: "Loading...",
+    period: "",
     content: {
       role: "Waiting...",
       stacks: {

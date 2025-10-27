@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const BannerSection = () => {
   const sectionRef = useRef(null);
-  const overlayRef = useRef(null); // ← Novo ref para o overlay
+  const overlayRef = useRef(null);
 
   useLayoutEffect(() => {
     //SET start state
