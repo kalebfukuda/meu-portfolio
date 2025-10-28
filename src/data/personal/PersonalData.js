@@ -3,6 +3,7 @@ import { StacksImages } from "./StacksImages";
 export const PersonalData = [
   {
     company: "Universidade Estadual Paulista",
+    icon: "Hat",
     period: "2012 - 2019",
     content: {
       role: "",
@@ -29,7 +30,8 @@ export const PersonalData = [
   },
   {
     company: "Geologistica",
-    period: "",
+    icon: "Computer",
+    period: "2018 - 2021",
     content: {
       role: "Full-stack Developer",
       stacks: {
@@ -61,7 +63,8 @@ export const PersonalData = [
   },
   {
     company: "Sinqia (Evertec Brasil)",
-    period: "",
+    icon: "Computer",
+    period: "2021 - 2023",
     content: {
       role: "Full-stack Developer",
       stacks: {
@@ -103,7 +106,8 @@ export const PersonalData = [
   },
   {
     company: "Self employee",
-    period: "",
+    icon: "Helmet",
+    period: "20213 - 2025",
     content: {
       role: "Electrician",
       stacks: {
@@ -130,7 +134,8 @@ export const PersonalData = [
   },
   {
     company: "Le Wagon Tokyo",
-    period: "",
+    icon: "Hat",
+    period: "07/2025 - 09/2025",
     content: {
       role: "Student",
       stacks: {
@@ -166,6 +171,7 @@ export const PersonalData = [
   },
   {
     company: "Loading...",
+    icon: "",
     period: "",
     content: {
       role: "Waiting...",

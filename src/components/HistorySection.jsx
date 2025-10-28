@@ -20,6 +20,11 @@ const HistorySection = () => {
       transformOrigin: "center center",
     });
 
+    gsap.set(["#historyUnesp", "#historyGeologistica", "#historySinqia"], {
+      display: "none",
+      opacity: 0,
+    });
+
     const tl = gsap.timeline();
 
     tl.to("#br", {
@@ -47,7 +52,75 @@ const HistorySection = () => {
         ease: "power5.out",
         duration: 2,
       })
-      .fromTo("#gr_unesp", { y: -100 }, { y: 0, opacity: 1 });
+      // Appears UNESP
+      .fromTo(
+        "#gr_unesp",
+        { y: -100 },
+        {
+          y: 0,
+          opacity: 1,
+        },
+        ">"
+      )
+      .fromTo(
+        "#historyUnesp",
+        { display: "none", opacity: 0 },
+        { display: "block", opacity: 1, ease: "power5.out" },
+        "<"
+      )
+      .to("#gr_unesp", { opacity: 0 }, ">+=1.5")
+      .fromTo(
+        "#historyUnesp",
+        { display: "block", opacity: 1 },
+        { display: "none", opacity: 0 },
+        "<"
+      )
+      // Appears geologistica
+      .fromTo(
+        "#gr_geo",
+        { y: -100 },
+        {
+          y: 0,
+          opacity: 1,
+        },
+        ">"
+      )
+      .fromTo(
+        "#historyGeologistica",
+        { display: "none", opacity: 0 },
+        { display: "block", opacity: 1, ease: "power5.out" },
+        "<"
+      )
+      .to("#gr_geo", { opacity: 0 }, ">+=1.5")
+      .fromTo(
+        "#historyGeologistica",
+        { display: "block", opacity: 1 },
+        { display: "none", opacity: 0 },
+        "<"
+      )
+      // Appears Sinqia
+      .fromTo(
+        "#gr_sinqia",
+        { y: -100 },
+        {
+          y: 0,
+          opacity: 1,
+        },
+        ">"
+      )
+      .fromTo(
+        "#historySinqia",
+        { display: "none", opacity: 0 },
+        { display: "block", opacity: 1, ease: "power5.out" },
+        "<"
+      )
+      .to("#gr_sinqia", { opacity: 0 }, ">+=1.5")
+      .fromTo(
+        "#historySinqia",
+        { display: "block", opacity: 1 },
+        { display: "none", opacity: 0 },
+        "<"
+      );
 
     ScrollTrigger.refresh();
 
@@ -77,7 +150,26 @@ const HistorySection = () => {
             preserveAspectRatio="xMidYMid slice"
           ></Br>
           <div className="mt-4 md:mt-0">
-            <HistoryCard name={"Universidade Estadual Paulista"}></HistoryCard>
+            <HistoryCard
+              id={"historyUnesp"}
+              name={"Universidade Estadual Paulista"}
+            ></HistoryCard>
+            <HistoryCard
+              id={"historyGeologistica"}
+              name={"Geologistica"}
+            ></HistoryCard>
+            <HistoryCard
+              id={"historySinqia"}
+              name={"Sinqia (Evertec Brasil)"}
+            ></HistoryCard>
+            {/* <HistoryCard
+              id="historyElectrician"
+              name={"Self employee"}
+            ></HistoryCard>
+            <HistoryCard
+              id="historyLeWagon"
+              name={"Le Wagon Tokyo"}
+            ></HistoryCard> */}
           </div>
         </div>
       </div>
