@@ -1,7 +1,10 @@
 import React, { useRef, useLayoutEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Br from "../assets/images/br.svg?react";
+import Country from "../assets/images/country.svg?react";
+
+import Airplane from "../assets/images/airplane.svg?react";
+
 import HistoryCard from "./cards/HistoryCard";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -9,16 +12,29 @@ gsap.registerPlugin(ScrollTrigger);
 const HistorySection = () => {
   const sectionRef = useRef(null);
   useLayoutEffect(() => {
-    gsap.set(["#br"], {
+    gsap.set(["#gr_country"], {
       opacity: 0,
       scale: 0.5,
       transformOrigin: "center center",
     });
 
-    gsap.set(["#sp", "#gr_unesp", "#gr_geo", "#gr_sinqia"], {
-      opacity: 0,
-      transformOrigin: "center center",
-    });
+    gsap.set(
+      [
+        "#sp",
+        "#gr_unesp",
+        "#gr_geo",
+        "#gr_sinqia",
+        "#divAirplane",
+        "#gr_br",
+        "#gr_jp",
+        "#gr_electrician",
+        "#gr_lewagon",
+      ],
+      {
+        opacity: 0,
+        transformOrigin: "center center",
+      }
+    );
 
     gsap.set(["#historyUnesp", "#historyGeologistica", "#historySinqia"], {
       display: "none",
@@ -27,7 +43,7 @@ const HistorySection = () => {
 
     const tl = gsap.timeline();
 
-    tl.to("#br", {
+    tl.to("#gr_br", {
       opacity: 1,
       scale: 1,
       duration: 2,
@@ -38,7 +54,7 @@ const HistorySection = () => {
       scrollTrigger: {
         trigger: sectionRef.current,
         start: "top top",
-        end: "bottom top",
+        end: "+=200%",
         scrub: 1.5,
         pin: true,
         pinSpacing: true,
@@ -120,6 +136,54 @@ const HistorySection = () => {
         { display: "block", opacity: 1 },
         { display: "none", opacity: 0 },
         "<"
+      )
+      .to(
+        "#gr_br",
+        {
+          y: -500,
+          opacity: 0,
+          scale: 0.5,
+          ease: "power5.out",
+          duration: 4,
+        },
+        ">+=1.5"
+      )
+      // Appears Airplane
+      .fromTo(
+        "#divAirplane",
+        { y: 50, x: 50, scale: 0.2, opacity: 0 },
+        {
+          y: 0,
+          x: 0,
+          opacity: 1,
+          scale: 1.2,
+          ease: "power5.out",
+          duration: 4,
+        },
+        "<-=1"
+      )
+      .fromTo(
+        "#divAirplane",
+        {
+          y: 0,
+          x: 0,
+          opacity: 1,
+          scale: 1.2,
+        },
+        {
+          opacity: 0,
+          x: 20,
+          scale: 0.2,
+          duration: 4,
+          ease: "power5.in",
+        },
+        ">+=2"
+      )
+      .fromTo(
+        "#gr_jp",
+        { opacity: 0, y: 500, scale: 0.5 },
+        { opacity: 1, ease: "power5.out", y: 0, duration: 2, scale: 1 },
+        "<+=1"
       );
 
     ScrollTrigger.refresh();
@@ -145,10 +209,18 @@ const HistorySection = () => {
     >
       <div id="br_wrapper" className="relative w-full h-screen">
         <div className="px-2 py-4">
-          <Br
-            className="w-full h-full"
-            preserveAspectRatio="xMidYMid slice"
-          ></Br>
+          <div id="divBr">
+            <Country
+              className="w-full h-full"
+              preserveAspectRatio="xMidYMid slice"
+            ></Country>
+          </div>
+          <div id="divAirplane" style={{ position: "absolute", top: "20%" }}>
+            <Airplane
+              className="w-full h-full"
+              preserveAspectRatio="xMidYMid slice"
+            ></Airplane>
+          </div>
           <div className="mt-4 md:mt-0">
             <HistoryCard
               id={"historyUnesp"}
