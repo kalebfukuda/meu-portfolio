@@ -1,41 +1,51 @@
 <svg width="196" height="159" viewBox="0 0 196 159" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="computer">
+<g id="gr_computer">
 <rect id="Rectangle 14" width="195.692" height="119.505" rx="20" fill="#EDEDED"/>
 <rect id="Rectangle 15" x="89.1826" y="119.505" width="17.5817" height="26.5" fill="#EDEDED"/>
 <rect id="Rectangle 16" x="64.2114" y="146.005" width="67.524" height="12.9952" rx="6.4976" fill="#EDEDED"/>
 <path id="Rectangle 17" d="M14.5239 13.25H181.168V106.255H14.5239V13.25Z" fill="black"/>
 <g id="code">
-<circle id="Ellipse 1" cx="27" cy="25" r="2" fill="#A1FEAF"/>
-<circle id="Ellipse 2" cx="27" cy="35" r="2" fill="#A1FEAF"/>
-<circle id="Ellipse 3" cx="27" cy="45" r="2" fill="#A1FEAF"/>
-<circle id="Ellipse 4" cx="27" cy="55" r="2" fill="#A1FEAF"/>
+<g id="l_5">
 <circle id="Ellipse 5" cx="27" cy="65" r="2" fill="#A1FEAF"/>
-<rect id="Rectangle 18" x="35" y="23" width="22" height="4" fill="#EDEDED"/>
-<rect id="Rectangle 21" x="35" y="33" width="35" height="4" fill="#EDEDED"/>
-<rect id="Rectangle 26" x="35" y="53" width="25" height="4" fill="#EDEDED"/>
-<rect id="Rectangle 19" x="60" y="23" width="22" height="4" fill="#FCFFA9"/>
-<rect id="Rectangle 22" x="74" y="33" width="22" height="4" fill="#FCFFA9"/>
-<rect id="Rectangle 27" x="63" y="53" width="22" height="4" fill="#FCFFA9"/>
-<rect id="Rectangle 31" x="74" y="63" width="22" height="4" fill="#FCFFA9"/>
-<rect id="Rectangle 23" x="99" y="33" width="22" height="4" fill="#A9DBFF"/>
-<rect id="Rectangle 24" x="60" y="43" width="22" height="4" fill="#A9DBFF"/>
 <rect id="Rectangle 30" x="49" y="63" width="22" height="4" fill="#A9DBFF"/>
-<rect id="Rectangle 29" x="105" y="53" width="22" height="4" fill="#A9DBFF"/>
-<g id="Rectangle 20">
-<path d="M85 23H99V27H85V23Z" fill="#FFA9AB"/>
-<path d="M85 23H99V27H85V23Z" fill="#FFA9AB"/>
+<rect id="Rectangle 31" x="74" y="63" width="22" height="4" fill="#FCFFA9"/>
+<g id="Rectangle 32">
+<path d="M99 63H135V67H99V63Z" fill="#FFA9AB"/>
+<path d="M99 63H135V67H99V63Z" fill="#FFA9AB"/>
 </g>
+</g>
+<g id="l_4">
+<circle id="Ellipse 4" cx="27" cy="55" r="2" fill="#A1FEAF"/>
+<rect id="Rectangle 26" x="35" y="53" width="25" height="4" fill="#EDEDED"/>
+<rect id="Rectangle 27" x="63" y="53" width="22" height="4" fill="#FCFFA9"/>
 <g id="Rectangle 28">
 <path d="M88 53H102V57H88V53Z" fill="#FFA9AB"/>
 <path d="M88 53H102V57H88V53Z" fill="#FFA9AB"/>
 </g>
+<rect id="Rectangle 29" x="105" y="53" width="22" height="4" fill="#A9DBFF"/>
+</g>
+<g id="l_3">
+<circle id="Ellipse 3" cx="27" cy="45" r="2" fill="#A1FEAF"/>
+<rect id="Rectangle 24" x="60" y="43" width="22" height="4" fill="#A9DBFF"/>
 <g id="Rectangle 25">
 <path d="M85 43H121V47H85V43Z" fill="#FFA9AB"/>
 <path d="M85 43H121V47H85V43Z" fill="#FFA9AB"/>
 </g>
-<g id="Rectangle 32">
-<path d="M99 63H135V67H99V63Z" fill="#FFA9AB"/>
-<path d="M99 63H135V67H99V63Z" fill="#FFA9AB"/>
+</g>
+<g id="l_2">
+<circle id="Ellipse 2" cx="27" cy="35" r="2" fill="#A1FEAF"/>
+<rect id="Rectangle 21" x="35" y="33" width="35" height="4" fill="#EDEDED"/>
+<rect id="Rectangle 22" x="74" y="33" width="22" height="4" fill="#FCFFA9"/>
+<rect id="Rectangle 23" x="99" y="33" width="22" height="4" fill="#A9DBFF"/>
+</g>
+<g id="l_1">
+<circle id="Ellipse 1" cx="27" cy="25" r="2" fill="#A1FEAF"/>
+<rect id="Rectangle 18" x="35" y="23" width="22" height="4" fill="#EDEDED"/>
+<rect id="Rectangle 19" x="60" y="23" width="22" height="4" fill="#FCFFA9"/>
+<g id="Rectangle 20">
+<path d="M85 23H99V27H85V23Z" fill="#FFA9AB"/>
+<path d="M85 23H99V27H85V23Z" fill="#FFA9AB"/>
+</g>
 </g>
 </g>
 </g>

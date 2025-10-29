@@ -107,7 +107,7 @@ export const PersonalData = [
   {
     company: "Self employee",
     icon: "Helmet",
-    period: "20213 - 2025",
+    period: "2023 - 2025",
     content: {
       role: "Electrician",
       stacks: {

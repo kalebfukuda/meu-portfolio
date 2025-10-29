@@ -50,6 +50,59 @@ const HistorySection = () => {
       }
     );
 
+    gsap.fromTo(
+      "#hat_string",
+      { rotation: -20 },
+      {
+        rotation: 20, // swing angle
+        transformOrigin: "top center", // pivot point
+        duration: 1.5,
+        ease: "sine.inOut", // smooth easing
+        yoyo: true,
+        repeat: -1, // infinite loop
+      }
+    );
+
+    gsap.fromTo(
+      "#hat_string",
+      { rotation: -20 },
+      {
+        rotation: 20, // swing angle
+        transformOrigin: "top center", // pivot point
+        duration: 1.5,
+        ease: "sine.inOut", // smooth easing
+        yoyo: true,
+        repeat: -1, // infinite loop
+      }
+    );
+
+    gsap.fromTo(
+      ["#l_1", "#l_2", "#l_3", "#l_4", "#l_5"],
+      { scaleX: 0, transformOrigin: "left center" },
+      {
+        scaleX: 1,
+        duration: 0.8,
+        ease: "power2.out",
+        stagger: 0.4, // delay between each line
+        repeat: -1, // loop forever
+        repeatDelay: 0.5,
+      }
+    );
+
+    gsap.fromTo(
+      ["#shine"],
+      { opacity: 0, scale: 0.2, transformOrigin: "center center" },
+      {
+        opacity: 0.5,
+        duration: 1,
+        scale: 0.8,
+        yoyo: true,
+        ease: "power2.out",
+        repeat: -1, // loop forever
+        repeatDelay: 0.5,
+      }
+    );
+
     const tl = gsap.timeline();
 
     tl.to("#gr_br", {
