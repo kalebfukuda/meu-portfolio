@@ -36,10 +36,19 @@ const HistorySection = () => {
       }
     );
 
-    gsap.set(["#historyUnesp", "#historyGeologistica", "#historySinqia"], {
-      display: "none",
-      opacity: 0,
-    });
+    gsap.set(
+      [
+        "#historyUnesp",
+        "#historyGeologistica",
+        "#historySinqia",
+        "#historyElectrician",
+        "#historyLewagon",
+      ],
+      {
+        display: "none",
+        opacity: 0,
+      }
+    );
 
     const tl = gsap.timeline();
 
@@ -184,6 +193,52 @@ const HistorySection = () => {
         { opacity: 0, y: 500, scale: 0.5 },
         { opacity: 1, ease: "power5.out", y: 0, duration: 2, scale: 1 },
         "<+=1"
+      )
+      // Appears Electrician
+      .fromTo(
+        "#gr_electrician",
+        { y: -100 },
+        {
+          y: 0,
+          opacity: 1,
+        },
+        ">"
+      )
+      .fromTo(
+        "#historyElectrician",
+        { display: "none", opacity: 0 },
+        { display: "block", opacity: 1, ease: "power5.out" },
+        "<"
+      )
+      .to("#gr_electrician", { opacity: 0 }, ">+=1.5")
+      .fromTo(
+        "#historyElectrician",
+        { display: "block", opacity: 1 },
+        { display: "none", opacity: 0 },
+        "<"
+      )
+      // Appears Le Wagon
+      .fromTo(
+        "#gr_lewagon",
+        { y: -100 },
+        {
+          y: 0,
+          opacity: 1,
+        },
+        ">"
+      )
+      .fromTo(
+        "#historyLewagon",
+        { display: "none", opacity: 0 },
+        { display: "block", opacity: 1, ease: "power5.out" },
+        "<"
+      )
+      .to("#gr_lewagon", { opacity: 0 }, ">+=1.5")
+      .fromTo(
+        "#historyLewagon",
+        { display: "block", opacity: 1 },
+        { display: "none", opacity: 0 },
+        "<"
       );
 
     ScrollTrigger.refresh();
@@ -234,14 +289,14 @@ const HistorySection = () => {
               id={"historySinqia"}
               name={"Sinqia (Evertec Brasil)"}
             ></HistoryCard>
-            {/* <HistoryCard
-              id="historyElectrician"
+            <HistoryCard
+              id={"historyElectrician"}
               name={"Self employee"}
             ></HistoryCard>
             <HistoryCard
-              id="historyLeWagon"
+              id={"historyLewagon"}
               name={"Le Wagon Tokyo"}
-            ></HistoryCard> */}
+            ></HistoryCard>
           </div>
         </div>
       </div>
