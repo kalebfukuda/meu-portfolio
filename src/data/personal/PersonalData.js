@@ -24,7 +24,7 @@ export const PersonalData = [
       sector: "Bachelor of Computer Science",
       description: `The 'Universidade Estadual Paulista (UNESP) - Rio Claro' campus is a public university in São Paulo, Brazil, known for its strong focus on science and technology. The Bachelor’s degree in Computer Science, offered through the Institute of Geosciences and Exact Sciences (IGCE), provides a solid foundation in programming, algorithms, systems, and software engineering. As a tuition-free public institution, UNESP offers quality education, making it a strong choice for students aiming to build a career in computer science.
     `,
-      comment: `The 'Universidade Estadual Paulista (UNESP) - Rio Claro' campus is a public university in São Paulo, Brazil, known for its strong focus on science and technology. The Bachelor’s degree in Computer Science, offered through the Institute of Geosciences and Exact Sciences (IGCE), provides a solid foundation in programming, algorithms, systems, and software engineering. As a tuition-free public institution, UNESP offers quality education, making it a strong choice for students aiming to build a career in computer science.`,
+      comment: `UNESP was where I laid the foundation for my career in computer science.`,
     },
     video: "",
   },
