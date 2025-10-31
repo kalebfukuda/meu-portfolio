@@ -316,8 +316,8 @@ const HistorySection = () => {
       className="flex justify-end items-center text-center"
     >
       <div id="br_wrapper" className="relative w-full h-screen">
-        <div className="px-2 py-4">
-          <div id="divBr">
+        <div className="px-2 py-4 md:flex md:justify-center md:items-center">
+          <div id="divBr" className="md:w-1/2 md:p-8">
             <Country
               className="w-full h-full"
               preserveAspectRatio="xMidYMid slice"
@@ -329,7 +329,7 @@ const HistorySection = () => {
               preserveAspectRatio="xMidYMid slice"
             ></Airplane>
           </div>
-          <div className="mt-4 md:mt-0">
+          <div className="mt-4 md:w-1/4 md:flex md:justify-center md:items-center">
             <HistoryCard
               id={"historyUnesp"}
               name={"Universidade Estadual Paulista"}

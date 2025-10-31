@@ -80,7 +80,10 @@ const HistoryCard = ({ id, name }) => {
   };
 
   return (
-    <div id={id} className="historyCard rounded-xl w-sm md:w-96 relative">
+    <div
+      id={id}
+      className="historyCard rounded-xl sm:w-sm md:w-md lg:w-lg relative"
+    >
       {data.icon === "Hat" && (
         <Hat
           className="absolute"
