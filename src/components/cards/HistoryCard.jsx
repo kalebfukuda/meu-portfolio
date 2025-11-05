@@ -133,6 +133,28 @@ const HistoryCard = ({ id, name }) => {
         </div>
       </div>
 
+      <div className="flex justify-center flex-wrap">
+        {data.content.stacks.data.map((stack, i) => (
+          <div className="mx-1 h-5 w-5">
+            <img className="" src={stack}></img>
+          </div>
+        ))}
+        {data.content.stacks.backend.map((stack, i) => (
+          <div className="mx-1 h-5 w-5">
+            <img className="" src={stack}></img>
+          </div>
+        ))}
+        {data.content.stacks.frontEnd.map((stack, i) => (
+          <div className="mx-1  h-5 w-5">
+            <img className="" src={stack}></img>
+          </div>
+        ))}
+        {data.content.stacks.others.map((stack, i) => (
+          <div className="mx-1 h-5 w-5">
+            <img className="" src={stack}></img>
+          </div>
+        ))}
+      </div>
       <div
         ref={boxRef}
         className="w-100% h-5 div-bottom rounded-lg flex justify-center items-center gap-2 p-2"

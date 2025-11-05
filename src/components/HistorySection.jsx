@@ -302,13 +302,6 @@ const HistorySection = () => {
     };
   }, []);
 
-  const bulletClick = (company) => {
-    console.log(company);
-    setCompanyName(company);
-    setIsOpen(true);
-    gsap.fromTo(boxRef.current, { opacity: 0 }, { opacity: 1, duration: 1.2 });
-  };
-
   return (
     <section
       id="sectionHistory"

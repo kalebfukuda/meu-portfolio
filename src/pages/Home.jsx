@@ -9,7 +9,7 @@ import HistorySection from "../components/HistorySection";
 function Home() {
   return (
     <div className="flex flex-col">
-      {/* <BannerSection /> */}
+      <BannerSection />
       <HistorySection />
       <ProjectsSection />
       <ContactSection />
