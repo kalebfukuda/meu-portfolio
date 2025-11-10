@@ -5,6 +5,7 @@ import ProjectsSection from "../components/ProjectsSection";
 import ContactSection from "../components/ContactSection";
 import BannerSection from "../components/BannerSection";
 import HistorySection from "../components/HistorySection";
+import RamenViewer from "../components/blender/RamenViewer";
 
 function Home() {
   return (
